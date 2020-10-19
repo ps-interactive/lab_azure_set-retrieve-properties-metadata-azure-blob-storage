@@ -12,7 +12,7 @@ namespace storage_lab
     {
         private static string containerName="cars-and-engines";
         private static string blobName="car_engine_1.jpg";
-        private static string connectionString="DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=psblobstorageaccount;AccountKey=KFzJrWFZtE7mX6chov8sBCICHKS9x6RzcPaVtW5UlWJC7P3SZ61Ssyq5QAr7sRD7uMgmCWJpEG86MzlLXd/dqA==";
+        private static string connectionString="[PUT_THE_STORAGE_CONNECTION_STRING_HERE]";
 
         static void Main(string[] args)
         {
