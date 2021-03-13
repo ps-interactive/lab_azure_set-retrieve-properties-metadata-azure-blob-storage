@@ -25,7 +25,7 @@ namespace storage_lab
 
             do{
                 Console.WriteLine("");
-                Console.WriteLine("Enter 'q' to exist.");
+                Console.WriteLine("Enter 'q' to exit.");
                 Console.WriteLine("Enter '1' to list all blobs.");
                 Console.WriteLine("Enter '2' to list properties of 'car_engine_1.jpg' blob.");
                 Console.WriteLine("Enter '3' to list metadata of 'car_engine_1.jpg' blob.");
