@@ -190,7 +190,6 @@ namespace storage_lab
             {
                 CloudStorageAccount storageAccount = CloudStorageAccount.Parse(connectionString);
 
-                storageAccount.CreateCloudBlobClient();
                 var blobClient = storageAccount.CreateCloudBlobClient();
                 var blobContainers = new List<CloudBlobContainer>();
                 BlobContinuationToken blobContinuationToken = null;
@@ -206,7 +205,7 @@ namespace storage_lab
                 foreach(var blobContainer in blobContainers)
                 {    
                     Console.WriteLine($"Container name: {blobContainer.Name}, PublicAccess: {blobContainer.Properties.PublicAccess} " 
-                    + $",LastModified {blobContainer.Properties.LastModified}");
+                    + $", LastModified {blobContainer.Properties.LastModified}");
                 }
 
                 Console.WriteLine("-----------------------------------");
